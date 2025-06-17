@@ -17,8 +17,7 @@ export default class MyPlugin extends Plugin {
 		await this.loadSettings();
 
 		// This creates an icon in the left ribbon.
-		const ribbonIconEl = this.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
-			// Called when the user clicks the icon.
+		const ribbonIconEl = this.addRibbonIcon('dice', 'Sync', (evt: MouseEvent) => {
 			new Notice('This is a notice!');
 		});
 		// Perform additional things with the ribbon
